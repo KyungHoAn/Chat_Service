@@ -5,7 +5,7 @@ const path = require("path")
 const server = http.createServer(app)
 const socketIO = require("socket.io")
 const moment = require("moment")
-
+const figlet = require('figlet');
 const io = socketIO(server)
  
 app.use(express.static(path.join(__dirname,"src")))
@@ -21,5 +21,14 @@ io.on("connection",(socket) => {
         })
     })
 })
+
+figlet('Kyung Ho!!', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(data)
+});
 
 server.listen(PORT, ()=>console.log(`server is running ${PORT}`))
