@@ -29,5 +29,3 @@ socket.emit("room", {payload:input.value})
 _disconnected & disconnecting_
 - disconnected 는 연결이 완전히 끊어진것
 - disconnecting은 고객이 접속을 중단할 것이지만 아직 방을 완전히 나가지는 않은 것
-
-.
