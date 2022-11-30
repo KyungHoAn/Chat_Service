@@ -49,6 +49,7 @@ wsServer.on("connection",socket => {
         console.log(wsServer.sockets.adapter)
         console.log(`Socket Event:${event}`);
     });
+    
     // 누군가 방에 들어올때 & 나갈 때 알림을 한다.
     socket.on("enter_room",(roomName, done) => {
         socket.join(roomName);      // 방 번호
@@ -60,6 +61,7 @@ wsServer.on("connection",socket => {
     socket.on("disconnecting", () => {
         socket.rooms.forEach(room => socket.to(room).emit("bye", socket.nickname,  countRoom(room)-1));
     });
+
     //방을 떠나는 것을 알림
     socket.on("disconnect", () => {
         wsServer.sockets.emit("room_change",publicRooms());

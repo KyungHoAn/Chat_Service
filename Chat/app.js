@@ -1,12 +1,12 @@
-const express = require("express")      //express 를 사용하게 되면 자동적으로 node_modules를 보게 된다.
-const http = require("http")
+const express = require("express");      //express 를 사용하게 되면 자동적으로 node_modules를 보게 된다.
+const http = require("http");
 const app = express();
-const path = require("path")
-const server = http.createServer(app)
-const socketIO = require("socket.io")
-const moment = require("moment")
+const path = require("path");
+const server = http.createServer(app);
+const socketIO = require("socket.io");
+const moment = require("moment");
 const figlet = require('figlet');
-const io = socketIO(server)
+const io = socketIO(server);
  
 app.use(express.static(path.join(__dirname,"src")))
 const PORT = process.env.PORT || 5000;      // 포트가 지정되어있으면 지정된 포트로 OR 5000
