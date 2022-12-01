@@ -29,3 +29,19 @@ socket.emit("room", {payload:input.value})
 _disconnected & disconnecting_
 - disconnected 는 연결이 완전히 끊어진것
 - disconnecting은 고객이 접속을 중단할 것이지만 아직 방을 완전히 나가지는 않은 것
+
+
+### ICECandidate
+- offer와 answer를 가지고 그걸 받는걸 모두 끝냈을 때
+peer-to-peer 연결의 양쪽에서 icecandidate 이벤트를 실행
+- ICE(Internet Connectivity Establishment (인터넷 연결 생성))
+- IceCandidate는 webRTC에 필요한 프로토콜들을 의미한다. 즉 브라우저가 서로 소통할 수 있게 해주는 방법
+1. icecandidate listend 하기
+
+
+### stun server
+
+
+### localtunnel
+- phone 으로 접속
+- npm i localtunnel => 서버를 전세계와 공유하게 해준다. 영원히 무료는 아님
