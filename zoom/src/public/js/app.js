@@ -88,7 +88,7 @@ async function handleCameraChange() {
         const videoSender = myPeerConnection
         .getSenders()
         .find(sender => sender.track.kind === "video");
-        videoSender.replaceTrack(videoTrack);
+        videoSender.replaceTrack(videoTrack)
     }    
 }
 
