@@ -13,7 +13,6 @@ const server = http.creatServer()
 const wss = new WebSocket.Server({server})
 ```
 
-
 ### Socket IO
 - socket IO 는 프론트와 백엔드 간 실시간 통신을 가능하게 해주는 프레임워크 라이브러리
 - 브라우저가 주는 websocket은 socket IO와 호환이 되지 않는다. => socketIO가 더 많은 기능을 제공하기 때문 => socket IO를 브라우저에 설치해야한다.
@@ -40,7 +39,7 @@ peer-to-peer 연결의 양쪽에서 icecandidate 이벤트를 실행
 
 
 ### stun server
-
+- 핸드폰 연동
 
 ### localtunnel
 - phone 으로 접속
