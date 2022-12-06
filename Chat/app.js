@@ -11,7 +11,7 @@ const io = socketIO(server);
 app.use(express.static(path.join(__dirname,"src")))
 const PORT = process.env.PORT || 5000;      // 포트가 지정되어있으면 지정된 포트로 OR 5000
 
-io.on("connection",(socket) => {
+io.on("connection",(socket) => { 
     socket.on("chatting",(data) => {    //데이터 받는 부분
         const {name, msg} = data;
         io.emit("chatting", {
