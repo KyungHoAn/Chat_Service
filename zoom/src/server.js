@@ -12,7 +12,7 @@ app.use("/public",express.static(__dirname+"/public"));
 app.get("/",(req, res) => res.render("home"));
 app.get("/*",(req,res) => res.redirect("/")); 
 
-// 두개의 port 를 같은 port 로 연결하기 위함
+// 두개의 port 를 같은 port 로 연결
 const httpServer = http.createServer(app);      // http 서버가 있으면 그 위에 ws서버를 생성
 const wsServer = new Server(httpServer);  
 
