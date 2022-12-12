@@ -41,3 +41,5 @@ peer-to-peer 연결의 양쪽에서 icecandidate 이벤트를 실행
 ### localtunnel
 - phone 으로 접속
 - npm i localtunnel => 서버를 전세계와 공유하게 해준다. 영원히 무료는 아님
+
+<hr>
