@@ -34,7 +34,7 @@ _disconnected & disconnecting_
 peer-to-peer 연결의 양쪽에서 icecandidate 이벤트를 실행
 - ICE(Internet Connectivity Establishment (인터넷 연결 생성))
 - IceCandidate는 webRTC에 필요한 프로토콜들을 의미한다. 즉 브라우저가 서로 소통할 수 있게 해주는 방법
-1. icecandidate listend 하기
+1. icecandidate listend
 
 ### stun server
 - 핸드폰 연동
