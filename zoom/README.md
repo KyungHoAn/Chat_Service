@@ -15,7 +15,7 @@ const wss = new WebSocket.Server({server})
 
 ### Socket IO
 - socket IO 는 프론트와 백엔드 간 실시간 통신을 가능하게 해주는 프레임워크 라이브러리
-- 브라우저가 주는 websocket은 socket IO와 호환이 되지 않는다. => socketIO가 더 많은 기능을 제공하기 때문 => socket IO를 브라우저에 설치해야한다.
+- 브라우저가 주는 websocket은 socket IO와 호환이 되지 않는다. => socketIO가 더 많은 기능을 제공하기 때문 => socket IO를 브라우저에 설치
 - socket IO는 webSocket보다 조금 무겁다 -> websocket API는 브라우저에 설치되어있기 때문
 - socket IO를 이용하면 방에 참가하고 떠나는 것이 매우 간단하다.
 
